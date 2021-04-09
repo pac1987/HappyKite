@@ -1,0 +1,341 @@
+/*!
+Theme Name: HappyKite Technical Test
+Theme URI: https://happykite.co.uk/
+Author: happykite
+Author URI: https://happykite.co.uk/
+Description: Happykite Technical Test Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: hpy
+Tags:
+
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Variables
+# Mixins
+# Bootstrap
+# Typography
+# Elements
+# Forms
+# WordPress Defaults
+# Accessibility
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import "components/normalize";
+
+/*--------------------------------------------------------------
+# Variables
+--------------------------------------------------------------*/
+@import "components/variables";
+
+/*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+@import "components/mixins";
+
+/*--------------------------------------------------------------
+# Bootstrap
+--------------------------------------------------------------*/
+@import "bootstrap";
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "components/setup/typography";
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+@import "components/setup/elements";
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+@import "components/setup/forms";
+
+/*--------------------------------------------------------------
+# WordPress Defaults
+--------------------------------------------------------------*/
+@import "components/wordpress/wordpress";
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+@import "components/setup/accessibility";
+
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+
+a{
+    color: $primary;
+}
+
+#masthead{
+    width: 100%;
+    background: #FFF;
+    padding: 3em 0;
+}
+
+.header-wrap{
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    img{
+        max-width: 50px;
+    }
+    h1, p{
+        margin:0;
+        line-height: 1.2;
+    }
+    h1{
+        @include font-size( 26 );
+        font-weight:$bold;
+        
+    }
+    p{
+        font-size:90%;
+        color:$secondary;
+        font-weight:$semibold;
+    }
+    .header-inner{
+        margin-left:1em;
+    }
+}
+
+#content{
+    padding: 3em 0;
+}
+
+.happy-welcome{
+    text-align: center;
+    margin-bottom:2em;
+    h2{
+        text-transform: uppercase;
+        color: $secondary;
+    }
+}
+
+.welcome-card{
+    display: flex;
+    background: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba( 0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom:3em;
+    h2{
+        color:$secondary;
+        text-transform: uppercase;
+        font-weight:$bold;
+    }
+}
+
+.card-left{ 
+    flex: 0 0 auto;
+    background: $primary;
+    padding: 1.2em;  
+}
+
+.card-right{
+    flex: 1 1 0px;
+    padding: 1.5em;
+}
+
+
+
+p.work-with-us{
+    text-align: center;
+    margin-bottom:8em;
+}
+
+.site-footer{
+    background: #535767;
+}
+
+.footer-top{
+    padding: 3em 0;
+    text-align: center;
+    color: #FFF;
+    h3{
+        color:$primary;
+        font-weight:$semibold;
+    }
+    p{
+        max-width:500px;
+        margin:0 auto;
+    }
+}
+
+.footer-nav{
+    background: #424655;
+    min-height: 4em;
+}
+
+/*!
+
+---------------------------------------------------------------
+Make your changes here
+---------------------------------------------------------------*/
+
+
+.happy-help{
+    margin-top: 100px;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    background-image: url('assets/img/services-bg.jpg');
+    background-size: cover; 
+    background-position: center;
+    
+    h2{
+        text-transform: uppercase;
+    }
+
+    .my-cards{
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+
+    .my-card{        
+        height: 350px;
+        width: 300px;        
+        text-align: left;
+              
+    }    
+	
+    .my-card__icon{        
+        height: 50px;
+        width: 50px;
+    }
+
+
+    .my-card__subtitles{
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .card_paragraph{
+        font-size: 13px;
+        letter-spacing: 2px; 
+    }
+    
+    .my-card__button {
+        color: white;
+        text-decoration: underline;
+        letter-spacing: 1px;              
+    }
+}
+
+
+//some of our work
+
+.happy-work{
+    margin-top: 50px;
+    padding: 50px;      
+    text-align: center;    
+    background-size: cover; 
+    background-position: center;
+
+
+    h3{
+        text-transform: uppercase;
+        color: $primary;
+    }
+
+    .my-cards{
+        display: flex;
+        justify-content: space-evenly;        
+    }
+
+    .my-work-card{
+        height: 450px;
+        background-color: white;        
+        width: 350px;        
+        text-align: left;              
+    }
+    
+           
+    .my-work__subtitles{
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-left: 10px;
+        color: $primary;
+    }
+
+    .work_paragraph{
+        font-size: 13px;
+        letter-spacing: 2px;
+        padding-left: 10px;
+        padding-right: 40px;
+        text-align: left; 
+    }
+    
+    .my-work__button {
+        color:$secondary;
+        text-decoration: none;
+        letter-spacing: 1px;
+        padding-left: 10px;
+        font-weight: bold;              
+    }
+}
+
+.happy-about{
+    margin-top: 90px;
+    margin-bottom: -220px;
+    padding: 50px;
+    width: 80%;
+    color: white;
+    text-align: center;
+    background-image: url('assets/img/about-bg.jpg');
+    background-size: cover; 
+    background-position: center;       
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba( 0,0,0,0.1);
+    overflow: hidden;
+    z-index: 0;    
+    margin-left: auto;
+    margin-right: auto;
+     height: 400px;
+     
+    h2{
+        text-transform: uppercase;
+    }
+
+    .my-about{
+        font-weight: bold;
+    }
+   
+}
+
+.coming-soon {
+    position: absolute;
+    margin-top:-31px;
+    text-transform: uppercase;
+    background-color: $primary;
+    color:white;
+    z-index: 1;
+  }
+
+.site-footer{
+    position: relative;
+    padding-top: 100px ;
+    z-index:-1;
+}
+
+.about_paragraph{
+    margin-top: 50px;
+    font-weight: normal;
+}
+
+
+
