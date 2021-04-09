@@ -1,3 +1,7 @@
+# Node Modules
+
+i did not upload the Node_modules so Npm needs to be installed from terminal - Npm install
+
 # Happy Technical Test
 
 This is a small guide to the technical test but if you have any issues feel free to contact us at [phil@happykite.co.uk](mailto:phil@happykite.co.uk)
